@@ -87,12 +87,12 @@
                                                 web-mode-hook))
     :config
     (progn
-      (evil-define-key 'insert emmet-mode-keymap (kbd "TAB") 'emmet-expand-yas)
-      (evil-define-key 'insert emmet-mode-keymap (kbd "<tab>") 'emmet-expand-yas)
-      (evil-define-key 'emacs emmet-mode-keymap (kbd "TAB") 'emmet-expand-yas)
-      (evil-define-key 'emacs emmet-mode-keymap (kbd "<tab>") 'emmet-expand-yas)
-      (evil-define-key 'hybrid emmet-mode-keymap (kbd "TAB") 'emmet-expand-yas)
-      (evil-define-key 'hybrid emmet-mode-keymap (kbd "<tab>") 'emmet-expand-yas)
+      (evil-define-key 'insert emmet-mode-keymap (kbd "TAB") 'emmet-expand-line)
+      (evil-define-key 'insert emmet-mode-keymap (kbd "<tab>") 'emmet-expand-line)
+      (evil-define-key 'emacs emmet-mode-keymap (kbd "TAB") 'emmet-expand-line)
+      (evil-define-key 'emacs emmet-mode-keymap (kbd "<tab>") 'emmet-expand-line)
+      (evil-define-key 'hybrid emmet-mode-keymap (kbd "TAB") 'emmet-expand-line)
+      (evil-define-key 'hybrid emmet-mode-keymap (kbd "<tab>") 'emmet-expand-line)
       (spacemacs|hide-lighter emmet-mode))))
 
 (defun html/post-init-evil-matchit ()

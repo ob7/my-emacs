@@ -1539,21 +1539,25 @@ Open junk file using helm, with `prefix-arg' search in junk files"
           :bindings
           (kbd "TAB")  'neotree-stretch-toggle
           (kbd "RET") 'neotree-enter
-          (kbd "|") 'neotree-enter-vertical-split
+          (kbd "\\") 'neotree-enter-vertical-split
           (kbd "-") 'neotree-enter-horizontal-split
           (kbd "?") 'evil-search-backward
           (kbd "c") 'neotree-create-node
           (kbd "d") 'neotree-delete-node
           (kbd "gr") 'neotree-refresh
           (kbd "h") 'spacemacs/neotree-collapse-or-up
-          (kbd "H") 'neotree-select-previous-sibling-node
+          ;;(kbd "H") 'neotree-select-previous-sibling-node
+          (kbd "H") 'neotree-hidden-file-toggle
           (kbd "J") 'neotree-select-down-node
           (kbd "K") 'neotree-select-up-node
-          (kbd "l") 'spacemacs/neotree-expand-or-open
+          ;;(kbd "l") 'spacemacs/neotree-expand-or-open
           (kbd "L") 'neotree-select-next-sibling-node
           (kbd "q") 'neotree-hide
-          (kbd "r") 'neotree-rename-node
+          ;;(kbd "r") 'neotree-rename-node
+          (kbd "r") 'neotree-refresh
           (kbd "R") 'neotree-change-root
+          (kbd "C-n") 'neotree-toggle
+          (kbd "C-w l") 'evil-window-right
           (kbd "s") 'neotree-hidden-file-toggle))
 
       (spacemacs/set-leader-keys
